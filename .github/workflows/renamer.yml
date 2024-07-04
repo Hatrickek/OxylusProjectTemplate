@@ -1,4 +1,15 @@
-- uses: kota65535/github-template-rename-action@v1
-  with:
-    from-name: $PROJECT_NAME
-    to-name: ${{ github.event.repository.name }}
+name: Rename
+
+on:
+  created:
+    branches: [ main ]
+    paths-ignore:
+      - '**.md'
+      
+jobs:        
+    steps:
+    - name : renaming
+      uses: kota65535/github-template-rename-action@v1
+      with:
+        from-name: $PROJECT_NAME
+        to-name: ${{ github.event.repository.name }}
