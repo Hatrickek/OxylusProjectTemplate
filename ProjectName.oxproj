@@ -1,5 +1,0 @@
-[project]
-name = "${PROJECT_TEMPLATE_NAME}"
-asset_directory = "Assets"
-start_scene = ""
-module_name = "${PROJECT_MODULE_TEMPLATE_NAME}"

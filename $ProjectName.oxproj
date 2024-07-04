@@ -1,0 +1,5 @@
+[project]
+name = "$ProjectName"
+asset_directory = "Assets"
+start_scene = ""
+module_name = "$ProjectNameModule"
