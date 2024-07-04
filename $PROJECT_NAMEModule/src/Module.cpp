@@ -1,10 +1,8 @@
-#include "Module.h"
+#include "Module.hpp"
 
 #include <entt/entt.hpp>
 #include <sol/sol.hpp>
-#include <Scripting/LuaHelpers.h>
-
-#include "Components.h"
+#include <Scripting/LuaHelpers.hpp>
 
 namespace ox {
 void $PROJECT_NAMEModule::register_components(sol::state* state, const entt::locator<entt::meta_ctx>::node_type& ctx) {

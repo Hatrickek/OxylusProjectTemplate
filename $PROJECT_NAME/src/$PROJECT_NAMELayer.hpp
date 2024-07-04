@@ -13,10 +13,6 @@ public:
   void on_imgui_render() override;
 
   static $PROJECT_NAMELayer* get() { return _instance; }
-
-  static std::string get_assets_path(const std::string_view path) {
-    return ("Assets" / std::filesystem::path(path)).string();
-  }
   
 private:
   ox::Shared<ox::Scene> _scene;

@@ -4,8 +4,8 @@
 
 #include <entt/locator/locator.hpp>
 
-#include <Modules/Linker.h>
-#include <Modules/ModuleInterface.h>
+#include <Modules/Linker.hpp>
+#include <Modules/ModuleInterface.hpp>
 
 #include <sol/state.hpp>
 
