@@ -11,14 +11,14 @@ $PROJECT_NAMELayer::$PROJECT_NAMELayer() : Layer("Game Layer") {
 }
 
 void $PROJECT_NAMELayer::on_attach(ox::EventDispatcher& dispatcher) {
-  ox::ModuleUtil::load_module("${PROJECT_MODULE_TEMPLATE_NAME}", "${PROJECT_MODULE_TEMPLATE_NAME}");
+  ox::ModuleUtil::load_module("$PROJECT_NAMEModule", "$PROJECT_NAMEModule");
 
   _scene = ox::create_shared<ox::Scene>();
   _scene->on_runtime_start();
 }
 
 void $PROJECT_NAMELayer::on_detach() {
-  ox::ModuleUtil::unload_module("${PROJECT_MODULE_TEMPLATE_NAME}");
+  ox::ModuleUtil::unload_module("$PROJECT_NAMEModule");
 }
 
 void $PROJECT_NAMELayer::on_update(const ox::Timestep& delta_time) {
