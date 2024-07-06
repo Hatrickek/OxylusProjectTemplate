@@ -1,5 +1,5 @@
 [project]
 name = "$ProjectName"
-asset_directory = "Assets"
+asset_directory = "$ProjectName/Assets"
 start_scene = ""
-module_name = "$ProjectNameModule"
+module_name = "$ProjectName/$ProjectNameModule"
