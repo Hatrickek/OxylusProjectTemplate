@@ -20,7 +20,7 @@ set_target_properties(${PRJ_NAME} PROPERTIES
 # Include directories
 target_include_directories(${PRJ_NAME} PUBLIC
     "${CMAKE_CURRENT_SOURCE_DIR}/src"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../${PRJ_NAME}/src"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../${PRJ_NAME}Module/src"
 )
 
 # Compile definitions
